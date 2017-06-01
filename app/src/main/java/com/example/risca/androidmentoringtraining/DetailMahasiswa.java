@@ -55,9 +55,9 @@ public class DetailMahasiswa extends AppCompatActivity {
         nimdisplay.setText(nim);
 
         if (jeniskelamin == "Laki-laki"){
-            fotoprofil.setImageResource(R.drawable.man);
+            fotoprofil.setImageResource(R.drawable.mann);
         }else {
-            fotoprofil.setImageResource(R.drawable.woman);
+            fotoprofil.setImageResource(R.drawable.womann);
         }
 
         btn_call.setOnClickListener(new View.OnClickListener() {
@@ -78,6 +78,13 @@ public class DetailMahasiswa extends AppCompatActivity {
         }
     });
 
-        
+        btn_message.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent smsIntent = new Intent(Intent.ACTION_SENDTO,Uri.parse("sms:"+getIntent().getExtras().getString("notelp","082240888")));
+                smsIntent.putExtra("sms_body", "");
+                startActivity(smsIntent);
+            }
+        });
 }
 }
