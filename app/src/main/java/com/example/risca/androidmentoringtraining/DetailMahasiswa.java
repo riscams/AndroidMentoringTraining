@@ -54,7 +54,7 @@ public class DetailMahasiswa extends AppCompatActivity {
         namadisplay.setText(nama);
         nimdisplay.setText(nim);
 
-        if (jeniskelamin == "Laki-laki"){
+        if (jeniskelamin == "L"){
             fotoprofil.setImageResource(R.drawable.mann);
         }else {
             fotoprofil.setImageResource(R.drawable.womann);

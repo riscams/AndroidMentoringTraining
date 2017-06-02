@@ -56,7 +56,7 @@ public class ListMahasiswaAdapter extends BaseAdapter {
         nama.setText(mahasiswa.getNama());
         nim.setText(mahasiswa.getNim());
 
-        if (mahasiswa.getJenis_kelamin().equals("Laki-laki")){
+        if (mahasiswa.getJenis_kelamin().equals("L")){
             gambar.setImageResource(R.drawable.mann);
         }else {
             gambar.setImageResource(R.drawable.womann);

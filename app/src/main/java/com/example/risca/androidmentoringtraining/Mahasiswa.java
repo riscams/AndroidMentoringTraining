@@ -7,7 +7,7 @@ package com.example.risca.androidmentoringtraining;
 public class Mahasiswa {
     private String nama, nim, alamat, jenis_kelamin, no_telp;
 
-    public Mahasiswa(String nama, String nim, String alamat, String jenis_kelamin, String no_telp) {
+    public Mahasiswa(String nama, String nim, String jenis_kelamin , String  alamat, String no_telp) {
         this.nama = nama;
         this.nim = nim;
         this.alamat = alamat;

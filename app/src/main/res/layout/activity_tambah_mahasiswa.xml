@@ -138,8 +138,8 @@
             android:layout_alignBottom="@+id/textView7"
             android:layout_alignLeft="@+id/telp"
             android:layout_alignStart="@+id/telp"
-            android:text="Perempuan"
-            android:layout_weight="0.92" />
+            android:layout_weight="0.92"
+            android:text="P" />
 
         <RadioButton
             android:id="@+id/btn_laki"
@@ -149,7 +149,7 @@
             android:layout_alignBottom="@+id/textView7"
             android:layout_alignLeft="@+id/telp"
             android:layout_alignStart="@+id/telp"
-            android:text="Laki-laki" />
+            android:text="L" />
     </RadioGroup>
 
     <Button
